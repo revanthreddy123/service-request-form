@@ -10,7 +10,7 @@ A responsive multi-step form built with React to collect:
 
 1 Clone the repository
 
-git clone https://github.com/YOUR-USERNAME/multistep-form.git
+git clone https://github.com/revanthreddy123/service-request-form.git
 cd service-request-form-main
 
 2 Install dependencies
