@@ -1,38 +1,92 @@
-.App {
+/* --- General Layout --- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* --- Headings --- */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* --- Inputs & Selects --- */
+input, select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  font-weight: bold;
+  margin-right: 6px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* --- Buttons --- */
+button {
+  padding: 10px 18px;
+  background: #1a7e1a;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background: #145f14;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* --- Sections --- */
+.section {
+  margin-bottom: 20px;
+  padding: 12px;
+  background: #fafafa;
+  border-radius: 6px;
+  border: 1px solid #e2e2e2;
+}
+
+/* --- Table Container (scrollable for mobile) --- */
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background: #e7e7e7;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* --- Mobile adjustments --- */
+@media (max-width: 600px) {
+  input, select, button {
+    width: 100%;
+    margin-top: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .section {
+    padding: 10px;
   }
 }
